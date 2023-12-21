@@ -805,8 +805,99 @@ slide {
   line-height: 35px;
   margin-bottom: 10px;
 }
+/* Service Section------------------- */
+.service{
+  padding: 100px 10px;
+  background-color: var(--light-bg-color);
+  background-image:url("../img/gallery/best-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.service .service-content{
 
-
+}
+.service .service-content .service-header{}
+.service .service-content .service-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 50px;
+}
+.service .service-content .service-body .card{
+  flex: 1;
+  flex-basis: 400px;
+  max-width: 600px;
+  padding: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  transition: .5s;
+  position: relative;
+}
+.service .service-content .service-body .card::after{
+  content: "";
+  width: 120px;
+  height: 120px;
+  border: 5px dashed var(--primary-color);
+  position: absolute;
+  border-radius: 100%;
+  top: 5%;
+  right: 3%;
+  z-index: 999;
+  -webkit-animation:spin 10s linear infinite;
+  -moz-animation:spin 10s linear infinite;
+  animation:spin 10s linear infinite;
+}
+.service .service-content .service-body .card:hover.card::after{
+  border: 5px dashed var(--secondary-color);
+}
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+.service .service-content .service-body .card:hover{
+  background-color: var(--primary-color);
+}
+.service .service-content .service-body .card:hover .card-content{
+  text-align: right;
+}
+.service .service-content .service-body .card-img{
+  width: 100%;
+}
+.service .service-content .service-body .card-img .card-icon{
+  color: var(--primary-color);
+  font-size: 80px;
+  width: fit-content;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: .8s;
+}
+.service .service-content .service-body .card:hover .card-icon{
+  left: 82%;
+  color: var(--secondary-color);
+}
+.service .service-content .service-body h3{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.service .service-content .service-body p{
+  font-size: 18px;
+}
 
 
 

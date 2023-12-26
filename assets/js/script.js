@@ -48,7 +48,6 @@ function showFunction() {
 
     }
   }
-
 //   Slider--------------------
   let sliderImageIndex = 0;
   showHeroSlider();
@@ -73,8 +72,8 @@ function showFunction() {
   }
 
 //   Carusal Butn-----
-const carousel = document.querySelector(".carousel"),
-firstImg = carousel.querySelectorAll(".card")[0],
+const carousel = document.querySelector(".carousel-items"),
+firstImg = carousel.querySelectorAll(".carousel-item")[0],
 arrowIcons = document.querySelectorAll(".carousel-btn");
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
@@ -147,32 +146,80 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-// galary ------------------
 
-$(document).ready(function(){
+// Carusel 2--------------------
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-            //    $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-            //    $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
+const carouselTwo = document.querySelector(".all-service"),
+firstImgTwo = carouselTwo.querySelectorAll(".service-card")[0],
+arrowIconsTwo = document.querySelectorAll(".carouselTwo-btn");
+
+// let isDragStartTwo = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIconsTwo = () => {
+    // showing and hiding prev/next icon according to carouselTwo scroll left value
+    let scrollWidth = carouselTwo.scrollWidth - carouselTwo.clientWidth; // getting max scrollable width
+    arrowIconsTwo[0].style.display = carouselTwo.scrollLeft == 0 ? "none" : "block";
+    arrowIconsTwo[1].style.display = carouselTwo.scrollLeft == scrollWidth ? "none" : "block";
+}
+
+arrowIconsTwo.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImgTwo.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carouselTwo scroll left else add to it
+        carouselTwo.scrollLeft += icon.id == "leftTwo" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
     });
-    
-    if ($(".filter-button").removeClass("active")) {
-    $(this).removeClass("active");
+});
+
+const autoSlideTwo = () => {
+    // if there is no image left to scroll then return from here
+    if(carouselTwo.scrollLeft - (carouselTwo.scrollWidth - carouselTwo.clientWidth) > -1 || carouselTwo.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImgTwo.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carouselTwo left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carouselTwo.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carouselTwo.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
-    $(this).addClass("active");
-    
-    });
+    // if user is scrolling to the left
+    carouselTwo.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStartTwo = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carouselTwo.scrollLeft;
+}
+
+const draggingTwo = (e) => {
+    // scrolling images/carouselTwo to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carouselTwo.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carouselTwo.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStopTwo = () => {
+    isDragStart = false;
+    carouselTwo.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carouselTwo.addEventListener("mousedown", dragStart);
+carouselTwo.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carouselTwo.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carouselTwo.addEventListener("touchend", dragStop);
 

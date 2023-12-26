@@ -898,9 +898,248 @@ slide {
 .service .service-content .service-body p{
   font-size: 18px;
 }
+/* Study Destination-------------------- */
+.study-destination{
+  padding: 100px 0;
+  margin-bottom: 150px;
+}
+.study-destination .study-destination-content .study-des-content-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 350px;
+}
+.study-destination .study-destination-content .study-des-content-header h3{
+  font-size: 35px;
+}
+.study-destination .study-destination-content .study-des-content-header .btn-group-study{
+  width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  }
+.study-destination .study-destination-content .study-des-content-header .btn-group-study span{
+  width: 45px;
+  height: 45px;
+  background-color: var(--border-color);
+  color: var(--secondary-color);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+.study-destination .study-destination-content .study-des-content-header .btn-group-study span:hover{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+.study-destination-area{
+  background-image: url(../img/gallery/blue-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  padding: 0 10px;
+}
+.services-title{
+  width: 1200px;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+}
+.services-title h3{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.services-title p{
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+.study-destination .study-destination-content .study-des-content-body{
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  gap: 2em;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.study-destination .study-destination-content .study-des-content-body .card{
+  flex: 1;
+  flex-basis: 300px;
+  max-width: 400px;
+  min-width: 370px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .8s;
 
+  object-fit: cover;
+  user-select: none;
+  background-color: var(--white-color);
+}
+.study-destination .study-destination-content .study-des-content-body .card .card-header{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  transition: .8s;
+}
+.study-destination .study-destination-content .study-des-content-body .card .card-header img{
+  width: 100%;
+  height: 100%;
+}
+.study-destination .study-destination-content .study-des-content-body .card .card-content{
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.study-destination .study-destination-content .study-des-content-body .card:hover::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #040c396e;
+}
+.study-destination .study-destination-content .study-des-content-body .card .card-content h3{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.study-destination .study-destination-content .study-des-content-body .card .card-content p{
+  font-size: 16;
+  opacity: 1;
+}
+.study-destination .study-destination-content .study-des-content-body .card:hover .card-header{
+  top: 0;
+  left: 0;
+}
+.study-destination .study-destination-content .study-des-content-body .card:hover .card-content{
+  color: var(--white-color);
+}
 
+.study-destination .study-destination-content .study-des-content-body.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.study-destination .study-destination-content .study-des-content-body.dragging .card{
+  pointer-events: none;
+}
 
+.study-destination-area .main-service{
+  position: absolute;
+  bottom: -16.7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+}
+.study-destination-area .main-service .btn-group-service{
+  width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.study-destination-area .main-service .btn-group-service span{
+  width: 45px;
+  height: 45px;
+  background-color: var(--border-color);
+  color: var(--secondary-color);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .3s;
+}
+.study-destination-area .main-service .btn-group-service span:hover{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.study-destination-area .all-service{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  gap: 2em;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.study-destination-area .all-service .service-card{
+  flex: 1;
+  flex-basis: 300px;
+  max-width: 400px;
+  min-width: 370px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .8s;
+
+  object-fit: cover;
+  user-select: none;
+  background-color: var(--white-color);
+}
+.study-destination-area .all-service .service-card .view{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 100px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  transition: .3s;
+}
+.study-destination-area .all-service .service-card .view:hover{
+  background-color: var(--primary-color);
+}
+.study-destination-area .all-service .service-card .service-card-header{
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+
+}
+.study-destination-area .all-service .service-card .service-card-header h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.study-destination-area .all-service .service-card .service-card-body{
+  width: 100%;
+  height: 200px;
+  transition: .8s;
+  overflow: hidden;
+}
+.study-destination-area .all-service .service-card .service-card-body img{
+  width: 100%;
+  height: 100%;
+}
 
 
 

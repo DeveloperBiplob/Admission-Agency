@@ -50,6 +50,16 @@
     line-height: 28px;
     margin-bottom: 15px;
   }
+    /* Study Destination--------------------- */
+    .study-destination .study-destination-content .study-des-content-body{
+      width: 98%;
+    }
+    .services-title{
+      width: 98%;
+    }
+    .study-destination-area .main-service{
+      width: 98%;
+    }
 
 
 
@@ -190,7 +200,16 @@
     line-height: 28px;
     margin-bottom: 15px;
   }
-
+    /* Study Destination--------------------- */
+    .study-destination .study-destination-content .study-des-content-body{
+      width: 98%;
+    }
+    .services-title{
+      width: 98%;
+    }
+    .study-destination-area .main-service{
+      width: 98%;
+    }
 
 
 
@@ -346,7 +365,16 @@
     line-height: 28px;
     margin-bottom: 15px;
   }
-
+    /* Study Destination--------------------- */
+    .study-destination .study-destination-content .study-des-content-body{
+      width: 98%;
+    }
+    .services-title{
+      width: 98%;
+    }
+    .study-destination-area .main-service{
+      width: 98%;
+    }
 
 
 
@@ -571,6 +599,28 @@
       animation:spin 10s linear infinite;
     }
 
+    /* Study Destination--------------------- */
+    .study-destination .study-destination-content .study-des-content-body{
+      width: 98%;
+    }
+    .services-title{
+      width: 98%;
+    }
+    .study-destination-area .main-service{
+      width: 98%;
+    }
+    .study-destination .study-destination-content .study-des-content-header h3{
+      font-size: 20px;
+    }
+    .services-title h3{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .services-title p{
+      font-size: 16px;
+      margin-bottom: 20px;
+      opacity: 1;
+    }
 
   
 

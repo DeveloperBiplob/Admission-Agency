@@ -621,6 +621,10 @@
       margin-bottom: 20px;
       opacity: 1;
     }
+    /* Testimonial section--------------- */
+    .testimonial .testimonial-content .testimonial-body .header h1{
+      font-size: 25px;
+    }
 
   
 

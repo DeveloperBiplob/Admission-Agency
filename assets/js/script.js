@@ -87,7 +87,7 @@ const showHideIcons = () => {
 
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        let firstImgWidth = firstImg.clientWidth + 24; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
@@ -164,7 +164,7 @@ const showHideIconsTwo = () => {
 
 arrowIconsTwo.forEach(icon => {
     icon.addEventListener("click", () => {
-        let firstImgWidth = firstImgTwo.clientWidth + 14; // getting first img width & adding 14 margin value
+        let firstImgWidth = firstImgTwo.clientWidth + 34; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carouselTwo scroll left else add to it
         carouselTwo.scrollLeft += icon.id == "leftTwo" ? -firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
@@ -222,4 +222,23 @@ carouselTwo.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carouselTwo.addEventListener("touchend", dragStop);
+
+// Testimonial Slider----------------------------
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("testimonial-card");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 

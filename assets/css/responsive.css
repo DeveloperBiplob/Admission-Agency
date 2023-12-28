@@ -221,7 +221,12 @@
       font-size: 50px;
       line-height: 65px;
     }
-
+    /* Latest Trende---------------- */
+    .latest-trend .latest-trend-content .latest-trend-header h1{
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
 
 
 
@@ -399,7 +404,13 @@
       font-size: 40px;
       line-height: 55px;
     }
-
+    /* Latest Trende---------------- */
+    .latest-trend .latest-trend-content .latest-trend-header h1{
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 35px;
+      margin-top: 5px;
+    }
 
 
 
@@ -671,7 +682,13 @@
       font-size: 30px;
       line-height: 45px;
     }
-  
+    /* Latest Trende---------------- */
+    .latest-trend .latest-trend-content .latest-trend-header h1{
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-top: 5px;
+    }
 
 
 

@@ -243,7 +243,19 @@
       font-size: 16px;
       line-height: 25px;
     }
-
+    /* incomparable-------------------- */
+    .incomparable .incomparable-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .incomparable .incomparable-content .left h3{
+      text-align: center;
+    }
+    .incomparable .incomparable-content .left .left-body .card{
+      flex: 1;
+      flex-basis: 300px;
+      max-width: 400px;
+    }
 
 
 
@@ -468,7 +480,19 @@
     font-size: 16px;
     line-height: 25px;
   }
-
+    /* incomparable-------------------- */
+    .incomparable .incomparable-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .incomparable .incomparable-content .left h3{
+      text-align: center;
+    }
+    .incomparable .incomparable-content .left .left-body .card{
+      flex: 1;
+      flex-basis: 250px;
+      max-width: 350px;
+    }
 
 
 
@@ -794,7 +818,26 @@
     font-size: 16px;
     line-height: 25px;
   }
-
+  /* specialization section------------------------------ */
+  .Specialization .Specialization-content .Specialization-body .card{
+    flex: 1;
+    flex-basis: 250px;
+    max-width: 400px;
+  }
+    /* incomparable-------------------- */
+    .incomparable .incomparable-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .incomparable .incomparable-content .left h3{
+      font-size: 20px;
+      text-align: center;
+    }
+    .incomparable .incomparable-content .left .left-body .card{
+      flex: 1;
+      flex-basis: 250px;
+      max-width: 400px;
+    }
 
 
 

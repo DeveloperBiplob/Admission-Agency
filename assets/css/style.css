@@ -1731,7 +1731,68 @@ slide {
   font-weight: 500;
   color: var(--secondary-color);
 }
+/* incomparable----------------------------------- */
+.incomparable{
+  padding: 100px 10px;
 
+}
+.incomparable .incomparable-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.incomparable .incomparable-content .left{
+  flex: 1;
+  flex-basis: 300px;
+}
+.incomparable .incomparable-content .left h3{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.incomparable .incomparable-content .left .left-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.incomparable .incomparable-content .left .left-body .card{
+  flex: 1;
+  flex-basis: 200px;
+  max-width: 300px;
+  background-color: var(--border-color);
+  color: var(--secondary-color);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: .3s;
+  cursor: pointer;
+}
+.incomparable .incomparable-content .left .left-body .card h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.incomparable .incomparable-content .left .left-body .card p{
+  font-size: 18px;
+}
+.incomparable .incomparable-content .right{
+  flex: 1;
+  flex-basis: 300px;
+}
+.incomparable .incomparable-content .right .img-wrapper{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.incomparable .incomparable-content .right .img-wrapper img{
+  width: 100%;
+  height: auto;
+}
 
 
 

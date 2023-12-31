@@ -1487,6 +1487,112 @@ slide {
   scale: 150%;
   visibility: hidden;
 }
+/* Contact section--------------------------------- */
+.contact{
+  padding: 100px 20px;
+  background-color: var(--light-bg-color);
+}
+.contact .contact-content .contact-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.contact .contact-content .contact-body .left{
+  flex: 1;
+  flex-basis: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.contact .contact-content .contact-body .left img{
+  width: 100%;
+  height: 100%;
+}
+.contact .contact-content .contact-body .left .left-content{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  padding: 30px;
+  z-index: 2;
+  color: var(--white-color);
+}
+.contact .contact-content .contact-body .left .left-content h1{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align:left;
+}
+.contact .contact-content .contact-body .left .left-content p{
+  font-size: 18px;
+  line-height: 32px;
+  text-align:left;
+  padding: 20px 0;
+  opacity: 1;
+}
+.contact .contact-content .contact-body .right{
+  flex: 1;
+  flex-basis: 50%;
+}
+.contact .contact-content .contact-body .right form{
+  padding: 30px;
+  background-color: var(--white-color);
+}
+.contact .contact-content .contact-body .right form .row{
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+  padding: 5px 0;
+}
+.contact .contact-content .contact-body .right form .row .radio-btn{
+  margin: 15px 0;
+}
+.contact .contact-content .contact-body .right form .row .radio-btn label{
+  font-size: 16px;
+}
+.contact .contact-content .contact-body .right form .row .radio-btn a{
+  color: var(--primary-color);
+}
+.contact .contact-content .contact-body .right form .row label{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-color);
+  opacity: 80%;
+}
+.contact .contact-content .contact-body .right form .row input,textarea{
+  padding: 12px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--border-color);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contact .contact-content .contact-body .right form .row textarea{
+  min-height: 50px;
+  font-size: 15px;
+  outline: none;
+  border: none !important;
+  border-bottom: 2px solid var(--border-color) !important;
+}
+
+.contact .contact-content .contact-body .right form .row input:focus{
+  outline: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.contact .contact-content .contact-body .right form .row textarea:focus{
+  outline: none;
+  border-bottom: 2px solid var(--secondary-color) !important;
+}
+.contact .contact-content .contact-body .right form button{
+  margin-top: 10px;
+  border-radius: 0;
+  width: auto;
+  border-radius: 5px;
+}
+
+
 
 
 

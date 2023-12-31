@@ -411,6 +411,15 @@
       line-height: 35px;
       margin-top: 5px;
     }
+    /* Contact Section--------------------- */
+    .contact .contact-content .contact-body{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      padding-top: 10px;
+    }
 
 
 
@@ -688,6 +697,20 @@
       font-weight: 700;
       line-height: 25px;
       margin-top: 5px;
+    }
+    /* Contact Section---------------- */
+    .contact .contact-content .contact-body .left .left-content h1{
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align:left;
+    }
+    .contact .contact-content .contact-body .left .left-content p{
+      font-size: 18px;
+      line-height: 24px;
+      text-align:left;
+      padding: 20px 0;
+      opacity: 1;
     }
 
 

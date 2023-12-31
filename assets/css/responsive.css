@@ -256,7 +256,24 @@
       flex-basis: 300px;
       max-width: 400px;
     }
-
+    /* Founder ----------------- */
+    .founder-header h1{
+      text-align: center;
+    }
+    .founder .founder-content{
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+    }
+    .founder .founder-content .founder-left{
+      flex: 1;
+      flex-basis: 100%;
+      margin-left: 50px;
+    }
+    .founder .founder-content .founder-right{
+      flex: 1;
+      flex-basis: 100%;
+    }
 
 
 
@@ -499,7 +516,24 @@
       line-height: 35px;
       margin-bottom: 20px;
     }
-
+  /* Founder ----------------- */
+  .founder-header h1{
+    text-align: center;
+  }
+  .founder .founder-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .founder .founder-content .founder-left{
+    flex: 1;
+    flex-basis: 100%;
+    margin-left: 50px;
+  }
+  .founder .founder-content .founder-right{
+    flex: 1;
+    flex-basis: 100%;
+  }
 
 
   /* Footer---------------- */

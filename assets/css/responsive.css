@@ -493,6 +493,12 @@
       flex-basis: 250px;
       max-width: 350px;
     }
+    /* Specialization--------------- */
+    .inte-service .inte-service-content h1{
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 20px;
+    }
 
 
 
@@ -837,6 +843,16 @@
       flex: 1;
       flex-basis: 250px;
       max-width: 400px;
+    }
+    /* Page Header-------------- */
+    .page-header .page-header-content h3{
+      font-size: 35px;
+    }
+    /* Specialization--------------- */
+    .inte-service .inte-service-content h1{
+      font-size: 20px;
+      line-height: 35px;
+      margin-bottom: 20px;
     }
 
 

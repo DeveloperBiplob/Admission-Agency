@@ -23,6 +23,17 @@ function closerRequestForm() {
     requestForm.style.display = "none";
 
   }
+  // Testimonial Modal-----------------
+function showRequestForm() {
+    var requestForm = document.getElementById("testimonial-modal");
+    requestForm.style.display = "block";
+  }
+
+function closerTestimonialModal() {
+    var requestForm = document.getElementById("testimonial-modal");
+    requestForm.style.display = "none";
+
+  }
 
 // Mobile DropDown----------------------------
 

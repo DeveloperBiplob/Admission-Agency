@@ -585,6 +585,13 @@
       font-size: 18px;
       opacity: 1;
     }
+    /* --------------------------------- */
+    /* Testimonial Page---------------- */
+    /* -------------------------------- */
+    .testimonial-modal{
+      width: 95%;
+      height: 450px;
+    }
 
 
 
@@ -970,7 +977,13 @@
       text-align: center;
       font-weight: 500;
     }
-
+    /* --------------------------------- */
+    /* Testimonial Page---------------- */
+    /* -------------------------------- */
+    .testimonial-modal{
+      width: 95%;
+      height: 350px;
+    }
 
 
 

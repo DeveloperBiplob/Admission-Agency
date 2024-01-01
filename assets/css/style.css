@@ -1972,6 +1972,10 @@ slide {
 .service-page-header img{
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .service-page-header .page-header-content{
   position: absolute;
@@ -2015,6 +2019,32 @@ slide {
 }
 .service-cont{
   background-color: var(--primary-color);
+}
+/* ------------------------------------------- */
+/* Country Page Design----------------------- */
+/* ------------------------------------------- */
+.conuntry-details-contents{
+  padding: 100px 0;
+}
+.conuntry-details-contents:nth-child(odd){
+  background-color: var(--secondary-color);
+}
+.conuntry-details-contents:nth-child(odd) .ser-details-content{
+  color: var(--white-color) !important;
+}
+
+.conuntry-details-contents:nth-child(odd) .ser-details-content{
+  flex-direction: row-reverse;
+}
+.country-img-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.country-title{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
 }
 
 

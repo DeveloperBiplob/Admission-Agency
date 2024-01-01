@@ -24,7 +24,7 @@ function closerRequestForm() {
 
   }
   // Testimonial Modal-----------------
-function showRequestForm() {
+function showTestimonialForm() {
     var requestForm = document.getElementById("testimonial-modal");
     requestForm.style.display = "block";
   }

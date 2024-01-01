@@ -568,7 +568,7 @@ div#preloader-active {
   outline: none;
 }
 .request-form .request-form-body form .row textarea{
-  min-height: 150px;
+  min-height: 50px;
   font-size: 15px;
 }
 

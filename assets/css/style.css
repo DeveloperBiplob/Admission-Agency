@@ -1951,6 +1951,71 @@ slide {
   line-height: 30px;
 }
 
+/* ------------------------------------------- */
+/* Service Page Design----------------------- */
+/* ------------------------------------------- */
+.service-page-header{
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.service-page-header::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-page-header img{
+  width: 100%;
+  height: 100%;
+}
+.service-page-header .page-header-content{
+  position: absolute;
+  width: 90%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+}
+.service-page-header .page-header-content h3{
+  flex: 1;
+  flex-basis: 30%;
+  font-size: 50px;
+}
+.service-page-header .page-header-content p{
+  flex: 1;
+  flex-basis: 50%;
+  text-align: left;
+  margin-top: 150px;
+  font-size: 18px;
+  opacity: 1;
+}
+.ser-details-contents{
+  padding: 100px 0;
+}
+.ser-details-contents:nth-child(odd){
+  background-color: var(--secondary-color);
+}
+.ser-details-contents:nth-child(odd) .ser-details-content{
+  color: var(--white-color) !important;
+}
+
+.ser-details-contents:nth-child(even) .ser-details-content{
+  flex-direction: row-reverse;
+}
+.service-det{
+  padding: 0;
+}
+.service-cont{
+  background-color: var(--primary-color);
+}
 
 
 /* Footer------------------------- */

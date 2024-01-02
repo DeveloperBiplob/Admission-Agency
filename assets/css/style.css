@@ -2202,7 +2202,103 @@ slide {
 .news-event .news-event-content h2 span{
   color: var(--primary-color);
 }
+.news{
+  padding: 50px 10px;
+}
+.news .news-content .news-header h3{
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--secondary-color);
+}
+.news .news-content .news-body{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.news .news-content .news-body .card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 50px;
+}
+.news .news-content .news-body .card .row{
+  flex: 1;
+  flex-basis: 100px;
+}
+.news .news-content .news-body .card .date-time{
+  max-width: fit-content;
+  color: var(--primary-color);
+  text-align: center;
+}
+.news .news-content .news-body .card .date-time span{
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 5px;
+}
+.news .news-content .news-body .card .date-time h1{
+  font-size: 40px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.news .news-content .news-body .card .row .img-container{
+  width: 100%;
+  /* height: 300px; */
+  overflow: hidden;
+  position: relative;
+}
+.news .news-content .news-body .card .row .img-container::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #040c3994;
+  transition: .5s;
+}
+.news .news-content .news-body .card .row .img-container:hover::after{
+  width: 100%;
+  transition: .5s;
+}
+.news .news-content .news-body .card .row .img-container img{
+  width: 100%;
+  height: auto;
+  transition: .5s;
+}
+.news .news-content .news-body .card .row .img-container img:hover{
+  transform: rotate(3deg);
+  scale: 110%;
+}
+.news .news-content .news-body .card .row .news-des-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+}
+.news .news-content .news-body .card .row .news-des-content .news-des h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    opacity: .8;
+}
+.news .news-content .news-body .card .row .news-des-content .news-des span{
+  display: block;
+  margin-bottom: 5px;
+  opacity: .7;
+}
+.news .news-content .news-body .card .row .news-des-content a{
+  border-top: 1px solid var(--border-color);
+  padding-top: 30px;
+}
 
 
 

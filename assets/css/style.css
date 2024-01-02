@@ -2227,6 +2227,10 @@ slide {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 50px;
 }
+.news .news-content .news-body .card:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .news .news-content .news-body .card .row{
   flex: 1;
   flex-basis: 100px;
@@ -2252,20 +2256,6 @@ slide {
   /* height: 300px; */
   overflow: hidden;
   position: relative;
-}
-.news .news-content .news-body .card .row .img-container::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #040c3994;
-  transition: .5s;
-}
-.news .news-content .news-body .card .row .img-container:hover::after{
-  width: 100%;
-  transition: .5s;
 }
 .news .news-content .news-body .card .row .img-container img{
   width: 100%;

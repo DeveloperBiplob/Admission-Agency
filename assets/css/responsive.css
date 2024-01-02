@@ -327,6 +327,12 @@
     .news .news-content .news-body .card .row .news-des-content a{
       margin-top: 30px;
     }
+    /* News----------------- */
+    .event .event-content .event-body .card{
+      flex: 1;
+      flex-basis: 400px;
+      max-width: 100%;
+    }
 
 
   /* Footer---------------- */
@@ -644,7 +650,12 @@
     .news .news-content .news-body .card .row .news-des-content a{
       margin-top: 30px;
     }
-
+    /* News------------------- */
+    .event .event-content .event-body .card{
+      flex: 1;
+      flex-basis: 400px;
+      max-width: 100%;
+    }
 
 
 
@@ -1065,6 +1076,12 @@
     }
     .news .news-content .news-body .card .row .news-des-content a{
       margin-top: 30px;
+    }
+    /* News------------------- */
+    .event .event-content .event-body .card{
+      flex: 1;
+      flex-basis: 400px;
+      max-width: 100%;
     }
 
 

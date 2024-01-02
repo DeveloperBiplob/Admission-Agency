@@ -2289,7 +2289,74 @@ slide {
   border-top: 1px solid var(--border-color);
   padding-top: 30px;
 }
-
+/* News Section------------------------------------------ */
+.event{
+  padding: 50px 10px;
+}
+.event .event-content .event-header h3{
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+  color: var(--secondary-color);
+}
+.event .event-content .event-body{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2em;
+}
+.event .event-content .event-body .card{
+  flex: 1;
+  flex-basis: 400px;
+  max-width: 600px;
+}
+.event .event-content .event-body .card .card-header .card-wrapper{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.evt-date{
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+}
+.evt-date h1{
+  font-weight: 700;
+}
+.event .event-content .event-body .card .card-header .card-wrapper img{
+  width: 100%;
+  height: auto;
+}
+.event .event-content .event-body .card .card-body{
+  margin-top: 20px;
+}
+.event .event-content .event-body .card .card-body .event-des h3{
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  opacity: .8;
+}
+.event .event-content .event-body .card .card-body .event-des span{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 300;
+  opacity: .7;
+}
+.event .event-content .event-body .card .card-body p{
+  margin: 10px 0;
+}
+.event .event-content .event-body .card .card-body a{
+  display: block;
+  border-top: 1px solid var(--border-color);
+  padding-top: 10px;
+}
 
 
 

@@ -303,7 +303,18 @@
       font-size: 18px;
       opacity: 1;
     }
-
+    /* ----------------------------------------- */
+    /* News & Event ------------------------ */
+    /* --------------------------------------- */
+    .news-event .news-event-content h1{
+      font-size: 80px;
+      line-height: 90px;
+      letter-spacing: 5px;
+    }
+    .news-event .news-event-content h2{
+      font-size: 100px;
+      margin-left: 40px;
+    }
 
 
   /* Footer---------------- */
@@ -591,6 +602,23 @@
     .testimonial-modal{
       width: 95%;
       height: 450px;
+    }
+    /* ----------------------------------------- */
+    /* News & Event ------------------------ */
+    /* --------------------------------------- */
+    .news-event{
+      width: 100%;
+      height: 60vh;
+    }
+    .news-event .news-event-content h1{
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: 5px;
+    }
+    .news-event .news-event-content h2{
+      font-size: 90px;
+      letter-spacing: 50px;
+      margin-left: 30px;
     }
 
 
@@ -983,6 +1011,23 @@
     .testimonial-modal{
       width: 95%;
       height: 350px;
+    }
+    /* ----------------------------------------- */
+    /* News & Event ------------------------ */
+    /* --------------------------------------- */
+    .news-event{
+      width: 100%;
+      height: 60vh;
+    }
+    .news-event .news-event-content h1{
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: 0px;
+    }
+    .news-event .news-event-content h2{
+      font-size: 80px;
+      letter-spacing: 30px;
+      margin-left: 20px;
     }
 
 

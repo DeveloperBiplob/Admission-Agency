@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> AdmissionXpert | Gallery</title>
+    <title> AdmissionXpert | Blog's</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/assets/img/logo/pavicon.icon">
@@ -106,9 +106,9 @@
                                         <a class="active-nav">Media Library <i class="fa-solid fa-caret-down"></i></a>
                                         <div class="menu-dropdown">
                                             <ul>
-                                                <li><a href="./blog.html"> Blog's</a><span> > </span></li>
+                                                <li><a href="./blog.html" class="active-nav"> Blog's</a><span> > </span></li>
                                                 <li><a href="./news-event.html">News & Events</a><span> > </span></li>
-                                                <li><a href="./gallery.html" class="active-nav">Gallery</a><span> > </span></li>
+                                                <li><a href="./gallery.html">Gallery</a><span> > </span></li>
                                             </ul>
                                         </div>
                                     </li>   
@@ -133,7 +133,7 @@
                             <a onclick="showMoileMenuOne()">Services <i class="fa-solid fa-caret-down" id="mobileMenuIconOne"></i></a>
                             <div class="mobile-dropdown" id="mobileDropdownOne">
                                 <ul>
-                                    <li><a onclick="showTestimonialForm()">List Property</a></li>
+                                    <li><a onclick="showRequestForm()">List Property</a></li>
                                     <li><a href="./nrb-service.html">NRB Service</a></li>
                                     <li><a href="./home-loan.html">Home Loan Assinstace</a></li>
                                 </ul>
@@ -157,69 +157,15 @@
                 </div>
             </div>
         </header>
-        <div class="portfolio-gallery">
-            <div class="portfolio-header">
-                <h3 class="title">Our Image Gallery</h3>
-                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quisquam.</p>
+        <!--Specialization section---------------- -->
+        <section class="service-page-header">
+            <img src="./assets/img/gallery/service-image.jpg" alt="">
+            <div class="page-header-content">
+                <h3>Visa Application</h3>
+                <p>We ensure a smooth visa experience by sharing our professional knowledge with the students, from planning to applying, even after reaching their destination.</p>
             </div>
-            <div class="container">
-                <!-- Image Gallery--------------------------- -->
-                <div id="gallerybtnalls">
-                    <button class="btnall igmGalleryActive" onclick="galleryFilterSection('all')"> Imgage all</button>
-                    <button class="btnall" onclick="galleryFilterSection('nature')"> Nature</button>
-                    <button class="btnall" onclick="galleryFilterSection('cars')"> Cars</button>
-                    <button class="btnall" onclick="galleryFilterSection('people')"> People</button>
-                </div>        
-                <div class="galleryImage">
-                    <div class="gallery-item nature">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery1.jpg" alt="Mountains" style="width:100%">
-                    </div>
-                    </div>
-                    <div class="gallery-item nature">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery2.jpg" alt="Lights" style="width:100%">      
-                    </div>
-                    </div>
-                    <div class="gallery-item nature">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery3.jpg" alt="Nature" style="width:100%">
-                    </div>
-                    </div>      
-                    <div class="gallery-item cars">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery4.jpg" alt="Car" style="width:100%">
-                    </div>
-                    </div>
-                    <div class="gallery-item cars">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery1.jpg" alt="Car" style="width:100%">
-                    </div>
-                    </div>
-                    <div class="gallery-item cars">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery2.jpg" alt="Car" style="width:100%">
-                    </div>
-                    </div>      
-                    <div class="gallery-item people">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery3.jpg" alt="People" style="width:100%">
-                    </div>
-                    </div>
-                    <div class="gallery-item people">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery4.jpg" alt="People" style="width:100%">
-                    </div>
-                    </div>
-                    <div class="gallery-item people">
-                    <div class="contentgallery">
-                        <img src="./assets/img/gallery/gallery1.jpg" alt="People" style="width:100%">
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </section>
+        <!-- Blog Section------------ -->
 
 
 
@@ -284,21 +230,63 @@
             </section>
         </footer>
         <!-- Messenger----- -->
-        <!-- <div class="messenger" onclick="showTestimonialForm()">
+        <!-- <div class="messenger" onclick="showRequestForm()">
             <i class="fa-brands fa-facebook-messenger"></i>
         </div> -->
         <!-- WhatsApp----- -->
-        <!-- <div class="whatsapp" onclick="showTestimonialForm()">
+        <!-- <div class="whatsapp" onclick="showRequestForm()">
             <i class="fa-brands fa-whatsapp"></i>
         </div> -->
         <!-- Requst Form -->
-        <div class="testimonial-modal" id="testimonial-modal">
-            <div class="testimonial-close-btn">
-                <i onclick="closerTestimonialModal()" class="fa-solid fa-xmark"></i>
+        <div class="request-form" id="request-form">
+            <div class="request-form-header">
+                <h3>Submit Request</h3>
+                <i onclick="closerRequestForm()" class="fa-solid fa-xmark"></i>
             </div>
-                <div class="testimonial-video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-CdyHaDL1pM?si=6EEKmT_KEdEIcaQF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+            <div class="subtitle">
+                <p>Please provide all the necessary information below for a more efficient and effective service.</p>
+            </div>
+            <div class="request-form-body">
+                <form action="#">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="" class="name" placeholder="Enter Your Full Name"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Email</label>
+                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Email"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Full Phone"> 
+                    </div>
+                    <div class="row">
+                        <label for="subbject">Purpose</label>
+                        <select class="slider-input" name="" id="">
+                            <option value="one">Sell</option>
+                            <option value="one">Rent</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="subbject">Property type</label>
+                        <select class="slider-input" name="" id="">
+                            <option value="one">Residential</option>
+                            <option value="one">Commercial</option>
+                            <option value="one">Land</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="subbject">Select Location</label>
+                        <select class="slider-input" name="" id="">
+                            <option value="one">Badda</option>
+                            <option value="one">Uttura</option>
+                            <option value="one">Bashundhara</option>
+                            <option value="one">Rampura</option>
+                            <option value="one">Mirpur</option>
+                        </select>
+                    </div>
+                    <button class="btn">Send Request</button>
+                </form>
             </div>
         </div>
 

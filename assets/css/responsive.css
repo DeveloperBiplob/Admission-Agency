@@ -1191,6 +1191,17 @@
     .blogs .blogs-content .blog-right{
       flex-basis: 100%;
     }
+    /* Blog Detials----- */
+    .writter .writter-content{
+      flex-direction: column;
+    }
+    .comments .comments-content .comments-body .card{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .comments .comments-content .comments-body .card:nth-child(even){
+      margin-left: 0;
+    }
 
 
   /* Footer---------------- */

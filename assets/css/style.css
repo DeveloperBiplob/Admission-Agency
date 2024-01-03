@@ -2597,6 +2597,255 @@ slide {
   background-color: var(--primary-color);
    color: var(--white-color);
 }
+/* ------------------------------- */
+/* Blog Page -------------------- */
+/* ------------------------------ */
+.service-details-header{
+  /* margin-top: 80px; */
+  padding: 100px 0;
+  background-image: url(../img/gallery/scholarship_cta.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: var(--white-color);
+}
+.service-details-header::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 30, 44, 0.678);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service-details-header h1{
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 999;
+}
+.service-details-header h1 span{ 
+  color: var(--primary-color);
+}
+.blogs{
+  padding: 50px 10px;
+}
+.blogs .blogs-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.blogs .blogs-content .blog-left{
+  flex: 1;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.blogs .blogs-content .blog-left .card{
+  border: 1px solid var(--border-color);
+}
+.blogs .blogs-content .blog-left .card .blg-card-left .blg-img-wrapper{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.blogs .blogs-content .blog-left .card .blg-card-left .blg-img-wrapper .blg-date{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 10px;
+  color: var(--white-color);
+  transition: .3s;
+}
+.blogs .blogs-content .blog-left .card:hover .blg-img-wrapper .blg-date{
+  background-color: var(--secondary-color);
+}
+.blogs .blogs-content .blog-left .card .blg-card-left .blg-img-wrapper img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s;
+}
+.blogs .blogs-content .blog-left .card .blg-card-right{
+  padding: 20px;
+}
+.blogs .blogs-content .blog-left .card .blg-card-right span{
+  color: var(--primary-color);
+}
+.blogs .blogs-content .blog-left .card .blg-card-right h3{
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+.blog-right-titile h3{
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 20;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.blogs .blogs-content .blog-left .card .blg-card-right .blg-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+.blogs .blogs-content .blog-right{
+  flex: 1;
+  flex-basis: 30%;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  height: fit-content;
+}
+.blogs .blogs-content .blog-right .row{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.blogs .blogs-content .blog-right .row form{
+  display: flex;
+  flex-direction: row;
+}
+.blogs .blogs-content .blog-right .row form input{
+  width: 100%;
+  padding: 15px 15px;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.blogs .blogs-content .blog-right .row form button{
+  width: 60px;
+  border: none;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.blogs .blogs-content .blog-right .row .latest-blog .card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card:last-child{
+  border-bottom: none;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .left{
+  flex: 1;
+  flex-basis: 10%;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .left .blg-img-wrapper{
+  width: 100px;
+  height: 100%;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .left .blg-img-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .right{
+  flex: 1;
+  flex-basis: 80%;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .right h4{
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.blogs .blogs-content .blog-right .row .latest-blog .card .right span{
+  color: var(--primary-color);
+}
+.blogs .blogs-content .blog-right .row .category ul li{
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.blogs .blogs-content .blog-right .row .category ul li a{
+  color: var(--dark-color);
+  opacity: .7;
+  transition: .3s;
+}
+.blogs .blogs-content .blog-right .row .category ul li a:hover{
+  color: var(--primary-color);
+}
+.blogs .blogs-content .blog-right .row .tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  margin-top: 20px;
+}
+.blogs .blogs-content .blog-right .row .tags a{
+  padding: 10px 15px;
+  background-color: var(--border-color);
+  border-radius: 5px;
+}
+.blogs .blogs-content .blog-right .row .tags a:hover{
+  background-color: var(--primary-color);
+}
+.blogs .blogs-content .blog-right .row .subscribe{
+  margin-top: 20px;
+}
+.blogs .blogs-content .blog-right .row .subscribe form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.blogs .blogs-content .blog-right .row .subscribe form input{
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.blogs .blogs-content .blog-right .row .subscribe form button{
+  width: 100%;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+.blog-left-footer{
+  margin-top: 50px;
+}
+.blog-left-footer ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+}
+.blog-left-footer li{
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: .3s;
+  border-radius: 5px;
+}
+.blog-left-footer li:hover{
+  background-color: var(--primary-color);
+}
+
+
+
+
 /* Footer------------------------- */
 .footer{
   background-color: var(--dark-color);

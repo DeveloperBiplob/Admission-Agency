@@ -2378,7 +2378,10 @@ slide {
   height: 100px;
   background-color: var(--white-color);
 }
-.event-details .event-content .event-header img{}
+.event-details .event-content .event-header img{
+  width: 100%;
+  height: auto;
+}
 
 .event-details .event-content .event-body .event-body-content{
   display: flex;

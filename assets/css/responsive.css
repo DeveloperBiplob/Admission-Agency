@@ -68,7 +68,10 @@
     .service-page-header .page-header-content h3{
       font-size: 40px;
     }
-
+    /* Event Detials page--------------- */
+    .event-details .event-content .event-body .left .row h1{
+      width: 90%;
+    }
 
 
 
@@ -332,6 +335,10 @@
       flex: 1;
       flex-basis: 400px;
       max-width: 100%;
+    }
+    /* Event Detials page--------------- */
+    .event-details .event-content .event-body .left .row h1{
+      width: 90%;
     }
 
 
@@ -656,8 +663,26 @@
       flex-basis: 400px;
       max-width: 100%;
     }
-
-
+    /* Event Detials page--------------- */
+    .event-details .event-content .event-header{
+      width: 100%;
+      height: 50vh;
+    }
+    .event-details .event-content .event-body .left .row h1{
+      font-style: 18px;
+      font-weight: 500;
+      width: 60%;
+    }
+    .event-details .event-content .event-body .event-body-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .event-details .event-content .event-body .left .row .img-wrapper{
+      height: 300px;
+    }
+    .event-details .event-content .event-body .left .row .img-wrapper::after{
+      width: 35%;
+    }
 
 
 
@@ -1083,8 +1108,43 @@
       flex-basis: 400px;
       max-width: 100%;
     }
-
-
+    /* Event Detials page--------------- */
+    .event-details .event-content .event-header{
+      width: 100%;
+      height: 40vh;
+    }
+    .event-details .event-content .event-body .left .row h1{
+      font-style: 18px;
+      font-weight: 500;
+      line-height: 35px;
+      width: 60%;
+    }
+    .event-details .event-content .event-body .event-body-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .event-details .event-content .event-body .left .row .row-text-content{
+      display: flex;
+      flex-direction: column;
+      gap: 5em;
+      padding: 50px 0;    
+    }
+    .event-details .event-content .event-body .left .row .overviews{
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    .event-details .event-content .event-body .left .row .overviews .overview-right p{
+      margin-top: 0px;
+      text-align: justify;
+    }
+    .event-details .event-content .event-body .left .row .img-wrapper{
+      height: 250px;
+    }
+    .event-details .event-content .event-body .left .row .img-wrapper::after{
+      width: 45%;
+    }
+    
 
 
   /* Footer---------------- */

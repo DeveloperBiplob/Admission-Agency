@@ -434,6 +434,7 @@ div#preloader-active {
 }
 .header .row .col.right a{
   transition: .3s;
+  cursor: pointer;
 }
 .header .row .col.right a:hover{
   color: var(--primary-color);

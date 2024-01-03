@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="col right">
-                            <a href="./login.html">Free Consultration</a>
+                            <a onclick="showRequestForm()">Free Consultration</a>
                             <a href="./contact.html">Contact Us</a>
                         </div>
                         <div class="col mobile-menu">
@@ -316,13 +316,44 @@
             <i class="fa-brands fa-whatsapp"></i>
         </div> -->
         <!-- Requst Form -->
-        <div class="testimonial-modal" id="testimonial-modal">
-            <div class="testimonial-close-btn">
-                <i onclick="closerTestimonialModal()" class="fa-solid fa-xmark"></i>
+        <div class="request-form" id="request-form">
+            <div class="request-form-header">
+                <h3>Submit Request</h3>
+                <i onclick="closerRequestForm()" class="fa-solid fa-xmark"></i>
             </div>
-                <div class="testimonial-video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-CdyHaDL1pM?si=6EEKmT_KEdEIcaQF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+            <div class="request-form-body">
+                <form action="#">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="" class="name" placeholder="Enter Your Full Name"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Email</label>
+                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Email"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Phone Number"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">City</label>
+                        <input type="text" name="city" id="" class="city" placeholder="Enter Your City"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Study Destination</label>
+                        <input type="text" name="Destination" id="" class="city" placeholder="Enter Your Destination"> 
+                    </div>
+                    <div class="row">
+                        <label for="phone">Message</label>
+                        <textarea name="message" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="radio-btn">
+                            <input type="radio"> <label for="">I agree to AdmissionXpert <a href="">Terms of Use</a></label>
+                        </div>
+                    </div>
+                    <button class="btn">Send Request</button>
+                </form>
             </div>
         </div>
 

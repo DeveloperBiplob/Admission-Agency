@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="col right">
-                            <a href="./login.html">Free Consultration</a>
+                            <a onclick="showRequestForm()">Free Consultration</a>
                             <a href="./contact.html">Contact Us</a>
                         </div>
                         <div class="col mobile-menu">
@@ -404,9 +404,6 @@
                 <h3>Submit Request</h3>
                 <i onclick="closerRequestForm()" class="fa-solid fa-xmark"></i>
             </div>
-            <div class="subtitle">
-                <p>Please provide all the necessary information below for a more efficient and effective service.</p>
-            </div>
             <div class="request-form-body">
                 <form action="#">
                     <div class="row">
@@ -419,32 +416,24 @@
                     </div>
                     <div class="row">
                         <label for="phone">Phone</label>
-                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Full Phone"> 
+                        <input type="text" name="phone" id="" class="phone" placeholder="Enter Your Phone Number"> 
                     </div>
                     <div class="row">
-                        <label for="subbject">Purpose</label>
-                        <select class="slider-input" name="" id="">
-                            <option value="one">Sell</option>
-                            <option value="one">Rent</option>
-                        </select>
+                        <label for="phone">City</label>
+                        <input type="text" name="city" id="" class="city" placeholder="Enter Your City"> 
                     </div>
                     <div class="row">
-                        <label for="subbject">Property type</label>
-                        <select class="slider-input" name="" id="">
-                            <option value="one">Residential</option>
-                            <option value="one">Commercial</option>
-                            <option value="one">Land</option>
-                        </select>
+                        <label for="phone">Study Destination</label>
+                        <input type="text" name="Destination" id="" class="city" placeholder="Enter Your Destination"> 
                     </div>
                     <div class="row">
-                        <label for="subbject">Select Location</label>
-                        <select class="slider-input" name="" id="">
-                            <option value="one">Badda</option>
-                            <option value="one">Uttura</option>
-                            <option value="one">Bashundhara</option>
-                            <option value="one">Rampura</option>
-                            <option value="one">Mirpur</option>
-                        </select>
+                        <label for="phone">Message</label>
+                        <textarea name="message" placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="radio-btn">
+                            <input type="radio"> <label for="">I agree to AdmissionXpert <a href="">Terms of Use</a></label>
+                        </div>
                     </div>
                     <button class="btn">Send Request</button>
                 </form>

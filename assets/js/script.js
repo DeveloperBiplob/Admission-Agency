@@ -173,3 +173,53 @@ arrowIconsThree.forEach(icon => {
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
     });
 });
+
+
+// Gallery----------------
+galleryFilterSection("all") // Execute the function and showGalleryImgage all gallery-items
+function galleryFilterSection(c) {
+  var x, i;
+  x = document.getElementsByClassName("gallery-item");
+  if (c == "all") c = "";
+  // Add the "showGalleryImgage" class (display:block) to the filtered elements, and remove the "showGalleryImgage" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    galleryRemoveClass(x[i], "showGalleryImgage");
+    if (x[i].className.indexOf(c) > -1) galleryAddClass(x[i], "showGalleryImgage");
+  }
+}
+
+// showGalleryImgage filtered elements
+function galleryAddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function galleryRemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add igmGalleryActive class to the current button (highlight it)
+var gallerybtnalls = document.getElementById("gallerybtnalls");
+var btnalls = gallerybtnalls.getElementsByClassName("btnall");
+for (var i = 0; i < btnalls.length; i++) {
+  btnalls[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("igmGalleryActive");
+    current[0].className = current[0].className.replace(" igmGalleryActive", "");
+    this.className += " igmGalleryActive";
+  });
+}

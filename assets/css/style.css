@@ -2531,9 +2531,72 @@ slide {
   font-size: 14px;
   margin-top: 5px;
 }
+/* Gallery page---------------------------- */
+.portfolio-gallery{
+  padding: 50px 10px;
+  margin: auto;
+  background-color: var(--light-bg-color);
+  min-height: 100vh;
+}
+.galleryImage {
+  margin: 8px -16px;
+}
+#gallerybtnalls{
+  text-align: center;
+}
+.portfolio-header{
+  margin-bottom: 50px;
+}
+/* Add padding BETWEEN each gallery-item (if you want) */
+.galleryImage,
+.galleryImage > .gallery-item {
+  padding: 8px;
+}
 
+/* Create three equal gallery-items that floats next to each other */
+.gallery-item {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide gallery-items by default */
+}
 
+/* Clear floats after galleryImages */
+.galleryImage:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/* Contentgallery */
+.contentgallery {
+  background-color: var(--white-color);
+  padding: 10px;
+}
+
+/* The "showGalleryImgage" class is added to the filtered elements */
+.showGalleryImgage {
+  display: block; 
+}
+
+/* Style the buttons */
+.btnall {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btnall:hover {
+  background-color: var(--primary-color);
+}
+
+/* Add a dark background color to the igmGalleryActive button */
+.btnall.igmGalleryActive {
+  background-color: var(--primary-color);
+   color: var(--white-color);
+}
 /* Footer------------------------- */
 .footer{
   background-color: var(--dark-color);

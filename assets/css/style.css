@@ -417,6 +417,11 @@ div#preloader-active {
 }
 .header .row .col .nev ul li:hover .menu-dropdown{
     max-height: 800px;
+    overflow: scroll;
+    scroll-behavior:smooth;
+}
+.header .row .col .nev ul li:hover .menu-dropdown::-webkit-scrollbar {
+  display: none;
 }
 
 .header .row .col .nev ul li a{

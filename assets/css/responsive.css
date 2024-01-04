@@ -114,6 +114,7 @@
     border: 1px solid #e5e8ec36;
     border-top: 0;
     border-bottom: 0;
+    overflow: scroll;
 
 
     transition: right 1s linear;
@@ -437,6 +438,7 @@
     border: 1px solid #e5e8ec36;
     border-top: 0;
     border-bottom: 0;
+    overflow: scroll;
 
 
     transition: right 1s linear;
@@ -868,6 +870,7 @@
     border: 1px solid #e5e8ec36;
     border-top: 0;
     border-bottom: 0;
+    overflow: scroll;
 
 
     transition: right 1s linear;

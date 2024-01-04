@@ -3066,6 +3066,117 @@ slide {
   align-items: center;
   gap: 1em;
 }
+/* ******************************************* */
+/* Career page design-------- */
+/* ******************************************* */
+.careers{
+  background-image: url("/assets/img/gallery//carrerbbanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.careers::after{
+  background-color: transparent;
+}
+
+.career{
+  padding: 100px 20px;
+}
+.career .career-content .career-header h1{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--secondary-dark-color);
+  text-align: center;
+}
+.career .career-content .career-header p{
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  padding: 20px 0;
+}
+.career .career-content .career-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.career .career-content .career-body .left img{
+  width: 100%;
+  height: auto;
+}
+.career .career-content .career-body .left{
+  flex: 1;
+  flex-basis: 50%;
+  border: 2px solid var(--light-bg-color);
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.career .career-content .career-body .right{
+  flex: 1;
+  flex-basis: 50%;
+  background-color: var(--light-bg-color);
+  padding: 25px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.career .career-content .career-body .right form{
+  padding: 30px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+.career .career-content .career-body .right form h1{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  opacity: 80%;
+  margin-bottom: 10px;
+}
+.career .career-content .career-body .right form .row{
+  display: flex;
+  flex-direction: column;
+  gap: .2em;
+  padding: 5px 0;
+}
+.career .career-content .career-body .right form .row label{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-color);
+  opacity: 80%;
+}
+.career .career-content .career-body .right form .row input,textarea{
+  padding: 12px 10px;
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+
+.career .career-content .career-body .right form .row textarea{
+  min-height: 150px;
+  font-size: 15px;
+}
+
+.career .career-content .career-body .right form .row input:focus{
+  outline: none;
+  border: 1px solid var(--secondary-color);
+}
+.career .career-content .career-body .right form .row textarea:focus{
+  outline: none;
+  border: 1px solid var(--secondary-color);
+}
+.career .career-content .career-body .right form button{
+  margin-top: 10px;
+  border-radius: 0;
+  width: auto;
+  border-radius: 5px;
+}
+
 
 /* Footer------------------------- */
 .footer{

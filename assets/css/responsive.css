@@ -74,7 +74,6 @@
     }
 
 
-
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* header------------------------ */
@@ -351,7 +350,41 @@
     .blogs .blogs-content .blog-right{
       flex-basis: 40%;
     }
-
+  /* Contact Section--------------------- */
+  .career .career-content .career-header h1{
+    font-size: 35px;
+  }
+  .career .career-content .career-body .left img{
+    width: auto;
+    height: 100%;
+  }
+  .career .career-content .career-body .left{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+  .career .career-content .career-body .right{
+  flex: 1;
+  flex-basis: 50%;
+  background-color: var(--light-bg-color);
+  padding: 30px 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  }
+  .career .career-content .career-body .right form h1{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  opacity: 80%;
+  margin-bottom: 10px;
+  }
+  .career .career-content .career-body .right form button{
+  font-size: 10px;
+  margin-top: 10px;
+  border-radius: 0;
+  width: auto;
+  border-radius: 5px;
+  }
 
   /* Footer---------------- */
   .footer .footer-content .row{
@@ -712,7 +745,41 @@
     .blogs .blogs-content .blog-right{
       flex-basis: 100%;
     }
-
+    /* Career Section--------------------- */
+    .career .career-content .career-header h1{
+      font-size: 30px;
+    }
+    .career .career-content .career-body .left img{
+      width: auto;
+      height: 100%;
+    }
+    .career .career-content .career-body .left{
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 20px;
+    }
+    .career .career-content .career-body .right{
+    flex: 1;
+    flex-basis: 50%;
+    background-color: var(--light-bg-color);
+    padding: 30px 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    }
+  .career .career-content .career-body .right form h1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    opacity: 80%;
+    margin-bottom: 10px;
+  }
+  .career .career-content .career-body .right form button{
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 0;
+    width: auto;
+    border-radius: 5px;
+  }
 
 
   /* Footer---------------- */
@@ -1202,7 +1269,46 @@
     .comments .comments-content .comments-body .card:nth-child(even){
       margin-left: 0;
     }
-
+    /* Contact Section--------------------- */
+    .career{
+      padding: 100px 5px;
+    }
+    .career .career-content .career-header h1{
+      font-size: 25px;
+    }
+    .career .career-content .career-body .left img{
+      border-radius: 10px;
+      width: auto;
+      height: 100%;
+    }
+    .career .career-content .career-body .left{
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 20px;
+    }
+  .career .career-content .career-body .right{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    padding: 30px 20px;
+  }
+  .career .career-content .career-body .right form{
+    padding: 30px 20px;
+  }
+  .career .career-content .career-body .right form h1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    opacity: 80%;
+    margin-bottom: 10px;
+  }
+  .career .career-content .career-body .right form button{
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 0;
+    width: auto;
+    border-radius: 5px;
+  }
 
   /* Footer---------------- */
   .footer .footer-content .row{
